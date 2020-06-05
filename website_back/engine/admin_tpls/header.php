@@ -5,7 +5,7 @@
             <div class="page-logo">
                 <a href="<?= ADMIN_URL ?>"
                    class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                    <img src="" alt="LOGO" aria-roledescription="logo">
+                    <img src="<?= ROOT_URL.'img/akustiko-logo.png' ?>" alt="LOGO" aria-roledescription="logo">
                 </a>
             </div>
             <!-- BEGIN PRIMARY NAVIGATION -->
