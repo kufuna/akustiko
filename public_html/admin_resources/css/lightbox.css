@@ -1,0 +1,47 @@
+.formRow .photo-preview {
+  float: left;
+  border: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.formRow .photo-preview img {
+  height: 150px;
+  border-radius: 0;
+  position: relative;
+}
+.poster-lightbox-back {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+}
+.poster-lightbox {
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  border: 1px solid #777;
+  box-shadow: 0 0 5px #333;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 800px;
+  max-height: 700px;
+  padding: 10px;
+  display: none;
+  background: #fff;
+  overflow: hidden;
+}
+.poster-lightbox img {
+  max-width: 780px;
+  max-height: 580px;
+}

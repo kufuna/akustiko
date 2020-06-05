@@ -1,0 +1,36 @@
+{
+  "tableName": "menu",
+  "autoBuild": true,
+  "plugins": [
+        {
+          "name":   "sortableList",
+          "mode":   "overview,reorder,remove",
+          "title":  "List of Menu",
+          "addBtn": { "url": "add", "text": "Add" },
+          "saveBtn": { "text": "Save" },
+          "depth": 4
+        },
+        {
+          "name":   "fieldsetform",
+          "mode":   "add,edit",
+          "title":  "Add Menu",
+          "setData": "id",
+          "plugins": [
+                {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Title",
+                  "columnName": "name",
+                  "required":   true
+                },
+                {
+                  "name":       "linkField",
+                  "mode":       "add,edit",
+                  "label":      "Link",
+                  "columnName": "link",
+                  "required":   true
+                }
+          ]
+        }
+  ]
+}

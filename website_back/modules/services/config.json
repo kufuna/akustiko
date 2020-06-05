@@ -1,0 +1,85 @@
+{
+  "tableName": "services",
+  "autoBuild": true,
+  "plugins": [
+    {
+      "name": "sortableList",
+      "mode": "overview,reorder,remove",
+      "title": "List of Services",
+      "addBtn": {
+        "url": "add",
+        "text": "Add"
+      },
+      "saveBtn": {
+        "text": "Save"
+      },
+      "depth": 1
+    },
+    {
+      "name": "fieldsetform",
+      "mode": "add,edit",
+      "title": "Add service",
+      "setData": "id",
+      "plugins": [
+        {
+          "name": "textfield",
+          "mode": "add,edit",
+          "label": "Title",
+          "columnName": "name",
+          "required": true
+        },
+        {
+          "name": "textfield",
+          "mode": "add,edit",
+          "label": "Sub Title",
+          "columnName": "sub_title",
+          "required": true
+        },
+        {
+          "name": "editorTextarea",
+          "mode": "add,edit",
+          "label": "Short Text",
+          "columnName": "short_text",
+          "escape": [
+            "html"
+          ]
+        },
+        {
+          "name": "editorTextarea",
+          "mode": "add,edit",
+          "label": "Text",
+          "columnName": "text",
+          "escape": [
+            "html"
+          ]
+        },
+        {
+          "name": "singlephoto",
+          "mode": "add,edit",
+          "label": "Image (width: 1366px)",
+          "columnName": "image",
+          "folder": "services",
+          "thumbs": [
+            {
+              "width": 1400,
+              "prefix": ""
+            }
+          ]
+        },
+        {
+          "name": "singlephoto",
+          "mode": "add,edit",
+          "label": "Icon (width: 1366px)",
+          "columnName": "icon",
+          "folder": "services",
+          "thumbs": [
+            {
+              "width": 1400,
+              "prefix": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

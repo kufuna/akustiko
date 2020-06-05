@@ -1,0 +1,37 @@
+{
+  "tableName": "contact",
+  "editModeOnly": true,
+  "plugins": [
+        {
+          "name":   "fieldsetform",
+          "mode":   "edit",
+          "edit_title":  "Contact",
+          "plugins": [
+                {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Address",
+                  "columnName": "address"
+                },
+                {
+                  "name":       "textarea",
+                  "mode":       "add,edit",
+                  "label":      "Google Maps Link",
+                  "columnName": "map_address"
+                },
+                {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Phone",
+                  "columnName": "phone"
+                },
+                {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Email",
+                  "columnName": "email"
+                }
+          ]
+        }
+  ]
+}

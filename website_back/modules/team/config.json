@@ -1,0 +1,54 @@
+{
+  "tableName": "team",
+  "autoBuild": true,
+  "plugins": [
+    {
+      "name": "sortableList",
+      "mode": "overview,reorder,remove",
+      "title": "List of Team",
+      "addBtn": {
+        "url": "add",
+        "text": "Add"
+      },
+      "saveBtn": {
+        "text": "Save"
+      },
+      "depth": 1
+    },
+    {
+      "name": "fieldsetform",
+      "mode": "add,edit",
+      "title": "Add service",
+      "setData": "id",
+      "plugins": [
+        {
+          "name": "textfield",
+          "mode": "add,edit",
+          "label": "Name",
+          "columnName": "name",
+          "required": true
+        },
+        {
+          "name": "textfield",
+          "mode": "add,edit",
+          "label": "Position",
+          "columnName": "sub_title",
+          "required": true
+        },
+        {
+          "name": "singlephoto",
+          "mode": "add,edit",
+          "label": "Image ()",
+          "columnName": "image",
+          "folder": "team",
+          "thumbs": [
+            {
+              "width": 1400,
+              "prefix": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

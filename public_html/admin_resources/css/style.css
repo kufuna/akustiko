@@ -1,0 +1,301 @@
+@font-face {
+   font-family: DejaVuSans-ExtraLight;
+   src: url(../fonts/DejaVuSans-ExtraLight.woff);
+   src: url(../fonts/DejaVuSans-ExtraLight.woff2);
+}
+#language {
+	border: 1px solid #f97906;
+    display: inline-block;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.eng  p{
+	font-family: Arial, Helvetica, sans-serif;
+    padding: 7px;
+	color: #f97906;
+}
+.geo  p{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 7px;
+	color: #f97906;
+}
+#container {
+	width: 100%;
+    background-color: #e8e8e8;
+    position: relative;
+}
+.logo {
+	width: 100px;
+	height: 100px;
+	position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.inside {
+	width: 82%;
+	max-width: 1160px;
+	margin: 0 auto;	
+	position: relative;
+	padding: 160px 0 90px 0;
+}
+.image {
+	width: 42%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.slogan {
+	color: #f97906;
+	font-size: 22px;
+	font-family: DejaVuSans-ExtraLight;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	letter-spacing: 2px;
+}
+.slogan2 {
+	color: #f97906;
+	font-size: 22px;
+	font-family: DejaVuSans-ExtraLight;
+	left: 0px;
+	display: none;
+}
+.txt {
+	width: 55%;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 40px;
+	
+	font-family: DejaVuSans-ExtraLight;
+	font-size: 17px;
+}
+.title {
+	width: 378px;
+	height: 50px;
+}
+
+.bottom-container {
+	width: 100%;
+	background-color: #e8e8e8;
+}
+.bottom-inside {
+	width: 82%;
+	max-width: 1160px;
+	margin: 0 auto;
+	
+	
+}
+.bottom-image {
+	width: 55%;
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+.bottom-txt {
+	width: 45%;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 40px;
+	font-family: DejaVuSans-ExtraLight;
+	font-size: 17px;
+}
+.title3 {
+	width: 290px;
+	height: 50px;
+	
+}
+
+#middle-container {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	padding-top: 1px;
+}
+.middle-inside {
+	width: 82%;
+	height: 500px;
+	margin: auto;
+	margin-top: 90px;
+	z-index: -1;
+}
+
+.middle-image {
+	width: 60%;
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	bottom: 0;
+}
+.middle-image img {
+	display: block;
+}
+.middle-txt {
+	width: 60%;
+	font-family: DejaVuSans-ExtraLight;
+	font-size: 17px;
+}
+.title2 {
+	width: 197px;
+	height: 50px;
+}
+.button {
+	position: fixed;
+	top:50%;
+	right: 20px;
+	margin: 0 37px;
+	margin-top: -49px;
+
+}
+
+.round-button1, .round-button2, .round-button3{
+    display:block;
+    width:26px;
+    height:26px;
+    border: 2px solid #f97906;
+    border-radius: 50%;
+    margin: 5px 0 5px 0; 
+    
+}
+
+.clicked
+{
+    background-color: #f97906;
+}
+
+
+#footer {
+	width: 100%;
+	/*height: 330px;*/
+	
+}
+.contact {
+	color: #333333;
+    font-size: 14px;
+    font-family: DejaVuSans-ExtraLight;
+	padding-top: 105px;
+	text-align: center;
+}
+.mail, .facebook, .phone{
+	width:  130px;
+	display: inline-block;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.mail img, .facebook img, .phone img{
+width: 100px;
+}
+.copyright {
+	margin-bottom: 15px;
+	padding-right: 15px;
+	text-align: right;
+	color: #333333;
+    font-size: 16px;
+    margin-top: 90px;
+    font-family: DejaVuSans-ExtraLight;
+}
+@media screen and (max-width:1000px) {
+  .title {
+   width:250px; 
+  height: 33px;
+  }
+  .title2 {
+   width: 130px;
+   height: 33px;
+  }
+  .title3 {
+   width: 191px;
+   height: 33px;
+  }
+}
+@media screen and (max-width: 740px){
+	.mail, .facebook, .phone {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	
+}
+@media screen and (max-width: 700px) {
+  .logo {
+  	position: absolute;
+    width:70px;
+    height: 70px;
+  }
+  .button {
+    width: 100%;
+  	display: none;
+   
+  }
+}
+@media screen and (max-width: 640px) {
+  .slogan2 {
+  	width: 70%;
+  	position: absolute;
+  	top: 80px;
+  	left: 20px;
+   display: block;
+   font-size: 16px;
+   letter-spacing: 2px;
+  }
+  .image {
+  	width: 100%;
+   
+  }
+    .txt {
+  	width: 100%; 
+  	padding-left: 1px;
+  
+  }
+  .bottom-image {
+  	width: 100%;
+   
+  }
+   .bottom-txt {
+  	width: 100%;
+  }
+  .middle-image {
+  	width: 100%;
+  	
+  
+  }
+  .middle-txt {
+  	
+    width: 100%;
+  }
+  .bottom-image {
+  	width: 100%;
+  }
+
+  .bottom-txt {
+ width: 100%;
+ padding-left: 1px;
+ margin-bottom: 90px;
+  }
+  .footer {
+    /*width: 100%;*/
+  	display: block;
+
+   
+  }
+  .title {
+   margin-top: 90px;   
+  }
+  .mail, .facebook, .phone {
+		margin: 0 0 16px 0;
+		width: 100%;
+	}
+	 .copyright {
+ width: 100%;
+ margin-top: 30px;
+ }
+  .slogan {
+ display: none;
+}
+}
+
+@media screen and (max-width: 580px) {
+  #bottom-container {
+  padding: 160px 0 90px 0;
+   
+  }
+}
+

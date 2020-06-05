@@ -1,0 +1,127 @@
+{
+  "tableName": "news",
+  "setActive": true,
+  "plugins": [
+    {
+      "name": "dynamicTable",
+      "mode": "overview,remove,toggleActive,removeall",
+      "title": "News",
+      "imageFolder": "news",
+      "addBtn": {
+        "url": "add",
+        "text": "Add"
+      },
+      "cols": [
+        {
+          "name": "Photo",
+          "value": "image_outer",
+          "renderer": "photo"
+        },
+        {
+          "name": "title",
+          "value": "title"
+        },
+        {
+          "name": "author",
+          "value": "author"
+        },
+        {
+          "name": "date",
+          "value": "date"
+        },
+        {
+          "name": "active",
+          "value": "active",
+          "renderer": "toggleBtn"
+        },
+        {
+          "name": "actions",
+          "value": "actions",
+          "renderer": "actionBtns"
+        }
+      ]
+    },
+    {
+      "name": "fieldsetform",
+      "mode": "add,edit,remove",
+      "title": "Add",
+      "plugins": [
+        {
+          "name": "textfield",
+          "mode": "add,edit",
+          "label": "Title",
+          "columnName": "title",
+          "escape": [
+            "html"
+          ],
+          "required": true
+        },
+        {
+          "name": "textarea",
+          "mode": "add,edit",
+          "label": "Short Text",
+          "columnName": "short_text",
+          "escape": [
+            "html"
+          ]
+        },
+        {
+          "name": "editorTextarea",
+          "mode": "add,edit",
+          "label": "Text",
+          "columnName": "text",
+          "escape": [
+            "html"
+          ]
+        },
+        {
+          "name": "singlephoto",
+          "mode": "add,edit",
+          "label": "Image Outer ()",
+          "columnName": "image_outer",
+          "folder": "news",
+          "thumbs": [
+            {
+              "width": 535,
+              "prefix": ""
+            }
+          ]
+        },
+        {
+          "name": "singlephoto",
+          "mode": "add,edit",
+          "label": "Image Inner (width: 1366px)",
+          "columnName": "image",
+          "folder": "news",
+          "thumbs": [
+            {
+              "width": 1400,
+              "prefix": ""
+            }
+          ]
+        },
+        {
+          "name":       "multiphoto",
+          "mode":       "add,edit",
+          "label":      "Gallery ()",
+          "columnName": "gallery",
+          "folder":     "news",
+          "thumbs":     [
+            { "width": 1200, "prefix": "" }
+          ]
+        },
+        {
+          "name": "datefield",
+          "mode": "add,edit",
+          "label": "Date",
+          "columnName": "date",
+          "format": "Y-m-d",
+          "escape": [
+            "html"
+          ],
+          "required": true
+        }
+      ]
+    }
+  ]
+}

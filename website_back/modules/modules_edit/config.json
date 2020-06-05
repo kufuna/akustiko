@@ -1,0 +1,68 @@
+{
+  "tableName": "cn_admin_modules",
+  "autoBuild": true,
+  "modulesEdit":true,
+  "multiLang": false,
+  "plugins": [
+        {
+          "name":   "sortableList",
+          "mode":   "overview,reorder,remove",
+          "title":  "List of menu",
+          "addBtn": { "url": "add", "text": "Add" },
+          "saveBtn": { "text": "Save" },
+          "depth": 2
+        },
+        {
+          "name":   "fieldsetform",
+          "mode":   "add,edit",
+          "title":  "Add",
+          "setData": "id",
+          "plugins": [
+                 {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Name",
+                  "columnName": "name",
+                  "escape":     [ "html" ],
+                  "required":   true,
+                  "errorText":  "Name field is empty"
+                },
+               {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Name Space",
+                  "columnName": "namespace",
+                  "escape":     [ "html" ],
+                  "errorText":  "Name Space field is empty"
+                },
+                {
+                  "name":       "singlephoto",
+                  "mode":       "add,edit,remove",
+                  "label":      "Icon(48x48)",
+                  "columnName": "icon",
+                  "folder":     "adminicons",
+                  "thumbs":     [
+                    { "width": 48, "prefix": "" }
+                  ]
+                },
+                {
+                  "name":       "checkbox",
+                  "mode":       "add,edit",
+                  "label":      "Active",
+                  "columnName": "active"
+                },
+                {
+                  "name":       "selectBox",
+                  "mode":       "add,edit",
+                  "label":      "Parent Module",
+                  "columnName": "parent",
+                  "optionName": "name",
+                  "optionValue": "id",
+                  "dataLoaderMethod": "getModules",
+                  "defaultValue":
+                    { "name": "Root", "id":0 }
+                }
+          ]
+        }
+  ]
+}

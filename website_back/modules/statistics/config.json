@@ -1,0 +1,41 @@
+{
+  "tableName": "statistics",
+  "autoBuild": true,
+  "plugins": [
+    {
+      "name": "sortableList",
+      "mode": "overview,reorder,remove",
+      "title": "List of Statistics",
+      "addBtn": {
+        "url": "add",
+        "text": "Add"
+      },
+      "saveBtn": {
+        "text": "Save"
+      },
+      "depth": 1
+    },
+    {
+      "name": "fieldsetform",
+      "mode": "add,edit",
+      "title": "Add service",
+      "setData": "id",
+      "plugins": [
+        {
+          "name": "textfield",
+          "mode": "add,edit",
+          "label": "Name",
+          "columnName": "name",
+          "required": true
+        },
+        {
+          "name": "textfield",
+          "mode": "add,edit",
+          "label": "Number",
+          "columnName": "number",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

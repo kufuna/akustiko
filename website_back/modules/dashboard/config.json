@@ -1,0 +1,47 @@
+{
+  "tableName": "cn_admin_dashboard",
+  "autoBuild": true,
+  "multiLang": false,
+  "plugins": [
+        {
+          "name":   "sortableList",
+          "mode":   "overview,reorder,remove",
+          "title":  "Dashboard",
+          "addBtn": { "url": "add", "text": "Add" },
+          "saveBtn": { "text": "Save" }
+        },
+        {
+          "_var":   "mainForm",
+          "name":   "fieldsetform",
+          "mode":   "add,edit,remove",
+          "title":  "Add",
+          "setData": "id",
+          "plugins": [
+                 {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Title",
+                  "columnName": "name",
+                  "escape":     [ "html" ],
+                  "required":   true
+                },
+               {
+                  "name":       "textfield",
+                  "mode":       "add,edit",
+                  "label":      "Link",
+                  "columnName": "link",
+                  "escape":     [ "html" ],
+                  "required":   true
+                },
+                {
+                  "name":       "singlephoto",
+                  "mode":       "add,edit,remove",
+                  "label":      "Icon(48x48)",
+                  "columnName": "icon",
+                  "folder":     "adminicons",
+                  "types":     ["jpg", "png"]
+                }
+          ]
+        }
+  ]
+}

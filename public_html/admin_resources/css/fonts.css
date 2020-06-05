@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'bpg_ingiri_arial';
+    src: url('font/bpg_ingiri_arial.eot');
+    src: url('font/bpg_ingiri_arial.eot?#iefix') format('embedded-opentype'),
+         url('font/bpg_ingiri_arial.woff2') format('woff2'),
+         url('font/bpg_ingiri_arial.woff') format('woff'),
+         url('font/bpg_ingiri_arial.ttf') format('truetype'),
+         url('font/bpg_ingiri_arial.svg#bpg_ingiri_arial') format('svg');
+}
+@font-face {
+    font-family: 'bpg_nino_mtavruli_bold';
+    src: url('font/bpg_nino_mtavruli_bold.eot');
+    src: url('font/bpg_nino_mtavruli_bold?#iefix') format('embedded-opentype'),
+         url('font/bpg_nino_mtavruli_bold.woff2') format('woff2'),
+         url('font/bpg_nino_mtavruli_bold.woff') format('woff'),
+         url('font/bpg_nino_mtavruli_bold.ttf') format('truetype'),
+         url('font/bpg_nino_mtavruli_bold.svg#bpg_ingiri_arial') format('svg');
+}
+@font-face {
+    font-family: 'bpg_nino_mtavruli_normal';
+    src: url('font/bpg_nino_mtavruli_normal.eot');
+    src: url('font/bpg_nino_mtavruli_normal?#iefix') format('embedded-opentype'),
+         url('font/bpg_nino_mtavruli_normal.woff2') format('woff2'),
+         url('font/bpg_nino_mtavruli_normal.woff') format('woff'),
+         url('font/bpg_nino_mtavruli_normal.ttf') format('truetype'),
+         url('font/bpg_nino_mtavruli_normal.svg#bpg_ingiri_arial') format('svg');
+}
+body:lang(ka) {
+  font-family: 'bpg_ingiri_arial';
+}
+.data-titile:lang(ka), .data-titile, .sidePad {
+  font-family: 'bpg_nino_mtavruli_bold';
+}

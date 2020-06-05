@@ -1,0 +1,26 @@
+body{
+  /*font-size: 12px;
+  font-family: "ProximaNovaA-Regular";*/
+}
+
+.upper-1{
+  
+}
+
+.upper-2{
+  
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 !important;
+}
+
+/*@font-face {
+  font-family: "TCM";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/TCM.woff);
+}
+*/
