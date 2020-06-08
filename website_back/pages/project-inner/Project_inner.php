@@ -1,6 +1,6 @@
 <?php
 
-class Page_Article extends Page
+class Page_Project_inner extends Page
 {
     private $data = null;
 
@@ -52,7 +52,7 @@ class Page_Article extends Page
         return array(
             $pageHead->init($this->request),
             PageHeader::init($this->request),
-            (object)array("tpl" => "article", "data" => $this->data),
+            (object)array("tpl" => "projects-inner", "data" => $this->data),
             PageFooter::init($this->request),
             $pageScripts->init($this->request),
             (object)array("tpl" => "foot", "data" => null)
@@ -107,7 +107,7 @@ class Page_Article extends Page
     public function getCanonical()
     {
 //        return SITE_URL . 'article/' . URL::escapeURL($this->title) . '/' . $this->id . '/';
-        return SITE_URL . 'article/';
+        return SITE_URL . 'project-inner/';
     }
 
     public $relatedPages = array(
