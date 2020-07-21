@@ -1,1 +1,254 @@
-@import "./general/swiper.min.css";
+
+@import 'swiper.min.css';
+@import 'style.css';
+
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("../fonts/NotoSans-Regular.eot");
+    src: url("../fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/NotoSans-Regular.svg#NotoSans-Regular") format("svg"),
+      url("../fonts/NotoSans-Regular.ttf") format("truetype"),
+      url("../fonts/NotoSans-Regular.woff") format("woff"),
+      url("../fonts/NotoSans-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NotoSans-Medium";
+    src: url("../fonts/NotoSans-Medium.eot");
+    src: url("../fonts/NotoSans-Medium.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/NotoSans-Medium.svg#NotoSans-Medium") format("svg"),
+      url("../fonts/NotoSans-Medium.ttf") format("truetype"), url("../fonts/NotoSans-Medium.woff") format("woff"),
+      url("../fonts/NotoSans-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NotoSans-SemiBold";
+    src: url("../fonts/NotoSans-SemiBold.eot");
+    src: url("../fonts/NotoSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/NotoSans-SemiBold.ttf") format("truetype"),
+      url("../fonts/NotoSans-SemiBold.woff") format("woff"),
+      url("../fonts/NotoSans-SemiBold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "NotoSans-Bold";
+    src: url("../fonts/NotoSans-Bold.eot");
+    src: url("../fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/NotoSans-Bold.svg#NotoSans-Regular") format("svg"), url("../fonts/NotoSans-Bold.ttf") format("truetype"),
+      url("../fonts/NotoSans-Bold.woff") format("woff"), url("../fonts/NotoSans-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NotoSansGeorgian-Regular";
+    src: url("../fonts/NotoSansGeorgian-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/NotoSansGeorgian-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/NotoSansGeorgian-Regular.svg") format("svg"),
+      url("../fonts/NotoSansGeorgian-Regular.ttf") format("truetype"),
+      url("../fonts/NotoSansGeorgian-Regular.woff") format("woff"),
+      url("../fonts/NotoSansGeorgian-Regular.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "NotoSansGeorgian-Bold";
+    src: url("../fonts/NotoSansGeorgian-Bold.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/NotoSansGeorgian-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/NotoSansGeorgian-Bold.svg") format("svg"), url("../fonts/NotoSansGeorgian-Bold.ttf") format("truetype"),
+      url("../fonts/NotoSansGeorgian-Bold.woff") format("woff"), url("../fonts/NotoSansGeorgian-Bold.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'NotoSansGeorgian-Medium';
+    src: url('../fonts/NotoSansGeorgian-Medium.eot');
+    src: url('../fonts/NotoSansGeorgian-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NotoSansGeorgian-Medium.svg#NotoSansGeorgian-Medium') format('svg'),
+         url('../fonts/NotoSansGeorgian-Medium.ttf') format('truetype'),
+         url('../fonts/NotoSansGeorgian-Medium.woff') format('woff'),
+         url('../fonts/NotoSansGeorgian-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "NotoSansGeorgian-SemiBold";
+    src: url("../fonts/NotoSansGeorgian-SemiBold.eot");
+    src: url("../fonts/NotoSansGeorgian-SemiBold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/NotoSansGeorgian-SemiBold.ttf") format("truetype"),
+      url("../fonts/NotoSansGeorgian-SemiBold.woff") format("woff"),
+      url("../fonts/NotoSansGeorgian-SemiBold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'FiraGO-Bold';
+    src: url('../fonts/FiraGO-Bold.eot');
+    src:
+        url('../fonts/FiraGO-Bold.woff') format('woff'),
+        url('../fonts/FiraGO-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'FiraSans-Bold';
+    src: url('../fonts/FiraSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'FiraSans-Medium';
+    src: url('../fonts/FiraSans-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('../fonts/FiraSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    font-size: 21px;
+    color: #181818;
+    /* font-family: "NotoSans-Regular", "NotoSansGeorgian-Regular"; */
+    /*font-family: 'FiraSans-Regular';*/
+    font-family: "NotoSans-Regular", "NotoSansGeorgian-Regular";
+    font-size: 21px;
+    text-decoration: none;
+    outline-color: none;
+    box-sizing: border-box;
+  }
+  html {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+     -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    text-size-adjust: 100%;
+    padding-top: 100px;
+  }
+  body.body-home {
+    padding-top: 0;
+  }
+  ul,li,p,img,h1,h2,h3,h4,h5,h6,input,button,nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  input {
+    outline: none;
+  }
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .noto-regular {
+    font-family: "NotoSans-Regular", "NotoSansGeorgian-Regular";
+  }
+  .noto-medium {
+    font-family: "NotoSans-Medium", "NotoSansGeorgian-Medium";
+  }
+  .noto-bold {
+    font-family: "NotoSans-Bold", "NotoSansGeorgian-Bold";
+  }
+  .noto-semibold {
+    font-family: "NotoSans-SemiBold", "NotoSansGeorgian-SemiBold";
+  }
+  .fira-bold {
+    font-family: 'FiraSans-Bold', 'FiraGO-Bold';
+  }
+  .fira-medium {
+    font-family: 'FiraSans-Medium';
+  }
+  .fira-regular {
+    font-family: 'FiraSans-Regular';
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .font-13 {
+    font-size: 13px;
+  }
+  .font-21 {
+    font-size: 21px;
+  }
+  .font-34 {
+    font-size: 34px;
+    line-height: 48px;
+  }
+  .font-55 {
+    font-size: 55px;
+    line-height: 78px;
+  }
+  .font-89 {
+    font-size: 89px;
+    line-height: 126px;
+  }
+
+  
+
+@media(max-width: 1900px) {
+  .font-89 {
+    font-size: 55px;
+    line-height: 78px;
+  }
+}  
+@media(max-width: 1599px) {
+    .font-89 {
+      font-size: 34px;
+      line-height: 48px;
+    }
+    .font-55 {
+      font-size: 34px;
+      line-height: 48px;
+    }
+
+}
+@media(max-width: 1365px) {
+    .font-34 {
+      font-size: 21px;
+      line-height: 29px;
+      /* font-family: "NotoSans-SemiBold", "NotoSansGeorgian-SemiBold"; */
+    }  
+    
+}
+@media(max-width: 1023px) {
+
+}
+@media(max-width: 767px) {
+    .font-55 {
+      font-size: 21px;
+      line-height: 29px;
+      /* font-family: "NotoSans-SemiBold", "NotoSansGeorgian-SemiBold"; */
+    }
+    .text{
+      font-size: 13px;
+    }
+}
